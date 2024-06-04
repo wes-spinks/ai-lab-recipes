@@ -10,7 +10,7 @@ CUDA_IMAGE := $(REGISTRY)/$(REGISTRY_ORG)/$(COMPONENT)/$(APP)_cuda:latest
 VULKAN_IMAGE := $(REGISTRY)/$(REGISTRY_ORG)/$(COMPONENT)/$(APP)_vulkan:latest
 
 MODELS_PATH := /locallm/models
-MODEL_NAME ?= granite-7b-lab-Q4_K_M.gguf
+MODEL_NAME ?= granite-3b-code-instruct.Q4_K_M.gguf
 
 .Phony: all
 all: build download-model-granite run

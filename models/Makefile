@@ -1,5 +1,5 @@
-MODEL_URL ?= https://huggingface.co/instructlab/granite-7b-lab-GGUF/resolve/main/granite-7b-lab-Q4_K_M.gguf
-MODEL_NAME ?= granite-7b-lab-Q4_K_M.gguf
+MODEL_URL ?= https://huggingface.co/ibm-granite/granite-3b-code-instruct-GGUF/resolve/main/granite-3b-code-instruct.Q4_K_M.gguf
+MODEL_NAME ?= granite-3b-code-instruct.Q4_K_M.gguf
 
 REGISTRY ?= quay.io
 REGISTRY_ORG ?= ai-lab
@@ -19,7 +19,7 @@ download-model:
 
 .PHONY: download-model-granite
 download-model-granite:
-	$(MAKE) MODEL_URL=https://huggingface.co/instructlab/granite-7b-lab-GGUF/resolve/main/granite-7b-lab-Q4_K_M.gguf MODEL_NAME=granite-7b-lab-Q4_K_M.gguf download-model
+	$(MAKE) MODEL_URL=https://huggingface.co//ibm-granite/granite-3b-code-instruct-GGUF/resolve/main/granite-3b-code-instruct.Q4_K_M.gguf MODEL_NAME=granite-3b-code-instruct.Q4_K_M.gguf download-model
 
 .PHONY: download-model-merlinite
 download-model-merlinite:
